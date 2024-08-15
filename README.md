@@ -1,28 +1,22 @@
-# Android Application for Fall Detection and Alert system Using Fuzzy Logic (_Simulink_)
-This project implements a fall detection mechanism using fuzzy logic concepts in Simulink (MATLAB). It simulates an Android application with the following features :
-
+# Android Application for Fall Detection and Alert System Using Fuzzy Logic (Simulink)
+This project demonstrates a fall detection system that leverages fuzzy logic within Simulink (MATLAB) to simulate an Android application. The app is designed with the following features:
 
 ## Features
-### 1. Monitor Accelerometer Data
-- Monitor the accelerometer data of your phone when the app is running.
-- Detect if there is a fall based on the accelerometer readings.
+### 1. Accelerometer Data Monitoring
+- Continuously track accelerometer data while the app is active to detect falls based on the readings.
 
-### 2. Record Audio and Measure Sound Level
-- Automatically switch on the microphone of the phone if a fall is detected.
-- Measure the sound level of the recorded audio.
-
+### 2. Audio Recording and Sound Level Measurement
+- Automatically activate the phone's microphone upon detecting a fall to record audio and assess the sound level.
+  
 ### 3. Estimate Danger Level Using Fuzzy Logic
-- Use fuzzy sound levels (Low, Medium, High) and fuzzy accelerometer levels (Low, Medium, High).
-- Estimate the level of danger (Low, Medium, High) based on the fuzzy inputs.
+- Utilize fuzzy logic to evaluate sound levels (Low, Medium, High) and accelerometer data (Low, Medium, High), determining the danger level (Low, Medium, High) based on these inputs.
 
-### 4. Send Alert with Audio and Location
-- If the danger level is High, send an alert to another phone using TCP/IP or UDP network.
-- Transmit the recorded sound from Step 2 and the GPS location of the current phone.
+### 4. Alert System with Audio and Location:
+- If a high danger level is detected, send an alert to a designated phone via TCP/IP or UDP, including the recorded audio and the phone’s GPS location.
 
-### 5. Play Buzzer Sound
-- Play a buzzer sound (alarm type) on the current phone if the danger level is Medium or High.
-- The sound level of the buzzer is proportional to the estimated danger level.
+### 5. Buzzer Activation:
+- Trigger a buzzer sound on the phone if the danger level is assessed as Medium or High, with the sound intensity proportional to the detected danger level.
 
+## Course Context:
 
-## Course 
-This project was completed as part of the Control Systems course at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar) under the guidance of [Prof. Nithin V. George](https://www.iitgn.ac.in/faculty/ee/fac-nithin).
+This project was developed as part of the Control Systems course at the Indian Institute of Technology Gandhinagar (IIT Gandhinagar), under the guidance of [Prof. Nithin V. George](https://www.iitgn.ac.in/faculty/ee/fac-nithin).
